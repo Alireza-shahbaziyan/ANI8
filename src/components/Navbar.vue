@@ -1,11 +1,11 @@
 <template>
-    <div class="navbar bg-gradient-to-r from-sky-700 to-indigo-700 flex justify-between items-center">
-        <div class="btn btn-ghost text-white border-2 border-b-white text-xl rounded-none">Ani8</div>
-        <div class="text-white">
+    <div class="h-14 w-full bg-gradient-to-r from-sky-700 to-indigo-700 flex justify-between items-center">
+        <div class="btn btn-ghost text-white border-2 border-b-white text-xl rounded-none">{{ name }}</div>
+        <div class="text-white md:flex md:inline-block hidden">
             <a href="#" class="btn btn-ghost">News</a>
             <a href="#" class="btn btn-ghost">wallpapers</a>
             <a href="#" class="btn btn-ghost">Top 10</a>
-            <div class="flex ">
+            <div class="w-">
                 <label for="#" class="btn btn-ghost border-2 border-l-white rounded-none">
                     <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="currentColor"
                         class="bi bi-github" viewBox="0 0 16 16">
@@ -15,11 +15,25 @@
                 </label>
             </div>
         </div>
+        <div class="btn btn-ghost md:hidden">
+            <label for="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-list"
+                    viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                </svg>
+            </label>
+        </div>
     </div>
 </template>
 <script>
 export default {
-    name: 'Navbar'
+    name: 'Navbar',
+    data() {
+        return {
+            name: 'Ani8'
+        }
+    },
 }
 </script>
 
