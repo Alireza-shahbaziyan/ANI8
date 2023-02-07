@@ -1,12 +1,18 @@
 <script>
 import Header from '../components/Header.vue';
+import Wallpapers from '../components/Wallpapers.vue';
 export default{
   components:{
-    Header
-  }
+    Header,
+    Wallpapers
+}
 }
 </script>
 
 <template>
-<Header/>
+  <div class="">
+    <Header/>
+    <Wallpapers/>
+
+  </div>
 </template>
