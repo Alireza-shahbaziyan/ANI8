@@ -27,3 +27,5 @@ npm run dev
 ```sh
 npm run build
 ```
+
+# If you like anime or manga, Ani8 is made for you.
