@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    
+        @font-face {
+            font-family: OtakuRantBold;
+            src: url('./fonts/OtakuRantBold.ttf');
+        }
+        @font-face {
+            font-family: OtakuRantItalbold;
+            src: url('./fonts/OtakuRantItalbold.ttf');
+        }
+    .myfont{
+        font-family: OtakuRantBold;
+    }
+  }

@@ -10,8 +10,8 @@
           text-lg 
           bg-gradient-to-r from-blue-600 to-indigo-700
         ">
-    <div class="p-0 m-0">
-      <img src="./Icons/ANI8.png" class="w-24 h-12 " alt="Ani">
+    <div class=" text-white uppercase text-3xl btn btn-ghost myfont">
+      ani8
     </div>
     <div @click="menuStatus = !menuStatus" class="btn btn-ghost">
       <svg xmlns="http://www.w3.org/2000/svg" id="menu-button" class="h-6 w-6 cursor-pointer md:hidden block"
@@ -27,16 +27,13 @@
               md:justify-between 
               md:pt-0">
         <li>
-          <a class="md:p-4 py-2 block hover:text-purple-400" href="#">{{`${menuStatus}`}}</a>
+          <div class="btn btn-ghost"><a class="md:p-4 py-2 block hover:text-purple-400" href="#">Manga</a></div>
         </li>
         <li>
-          <a class="md:p-4 py-2 block hover:text-purple-400" href="#">Pricing</a>
+          <div class="btn btn-ghost "><a class="md:p-4 py-2 block hover:text-purple-400" href="#">About me</a></div>
         </li>
         <li>
-          <a class="md:p-4 py-2 block hover:text-purple-400" href="#">Customers</a>
-        </li>
-        <li>
-          <a class="md:p-4 py-2 block hover:text-purple-400 text-purple-500" href="#">Sign Up</a>
+          <div class="btn btn-ghost "><a class="md:p-4 py-2 block hover:text-purple-400 " href="#">Sign Up</a></div>
         </li>
         <li>
           <a class="md:p-4 py-2 block hover:text-purple-400" href="#">

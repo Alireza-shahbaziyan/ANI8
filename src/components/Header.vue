@@ -1,24 +1,37 @@
 <template>
-    <header class=" w-full h-screen">
-    <ResponsiveNavbar/>
-        <div class="text-white md:text-xl font-bold md:w-1/3 w-10/12 h-2/3 flex flex-col items-center justify-center mx-8">
-            <div class="md:text-9xl text-6xl font-black font-sans w-full uppercase">
-                ANI8
+    <header class=" w-full h-screen overflow-hidden bg-cover bg-center bg-fixed">
+        <ResponsiveNavbar />
+        <div
+            class="text-white md:text-xl
+             font-serif bg-none 
+              lg:backdrop-blur-xl
+               md:w-1/3 w-3/5 h-full md:skew-x-12
+                flex flex-col items-center md:justify-center justify-evenly mx-4">
+            <div class="md:text-9xl text-7xl font-black myfont w-full uppercase">
+               <span class="text-fuchsia-500">A</span><span class="text-orange-500">N</span><span class="text-sky-500">I</span><span class="text-red-500">8</span>
             </div>
-            If you like anime or manga, Ani8 is made for you.
+            <div class="md:hidden"></div>
+            <div class="hidden md:inline">If you like anime or manga, Ani8 is made for you.</div>
         </div>
     </header>
 </template>
+
 <script>
 import ResponsiveNavbar from './ResponsiveNavbar.vue';
 
-export default{
+export default {
     name: "Header",
     data() {
         return {
             aniName: "demon slayer",
         };
     },
-    components: {ResponsiveNavbar }
+    components: { ResponsiveNavbar }
 }
 </script>
+<style scoped>
+header {
+    border-radius: 0 0 85% 85% / 30%;
+    background-image: url('../assets/images/image11.jpg');
+}
+</style>
