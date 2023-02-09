@@ -8,7 +8,7 @@
           md:py-0
           px-2
           text-lg 
-          bg-gradient-to-r from-blue-600 to-indigo-700
+          bg-slate-800
         ">
     <div class=" text-white uppercase text-3xl btn btn-ghost myfont">
       ani8
