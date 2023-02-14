@@ -9,7 +9,7 @@
           px-2
           md:h-16
           text-lg 
-          bg-gradient-to-r from-indigo-800 to-fuchsia-900
+          bg-gradient-to-r from-indigo-600/[.5] to-fuchsia-700/[.5]
         ">
     <div class=" text-white uppercase text-3xl btn btn-ghost myfont">
       ani8
@@ -34,7 +34,7 @@
           <div class="btn btn-ghost "><a class="md:p-4 py-2 block hover:text-purple-400" href="#">About me</a></div>
         </li>
         <li>
-          <div class="btn btn-ghost "><a class="md:p-4 py-2 block hover:text-purple-400 " href="#">Sign Up</a></div>
+          <router-link to="/login"><div class="btn btn-ghost "><a class="md:p-4 py-2 block hover:text-purple-400 " href="#">Sign Up</a></div></router-link>
         </li>
         <li>
           <a class="p-2 block hover:text-purple-400" href="#">
@@ -50,6 +50,7 @@
 </template>
 
 <script>
+import { RouterLink } from 'vue-router';
 export default {
   data() {
     return {

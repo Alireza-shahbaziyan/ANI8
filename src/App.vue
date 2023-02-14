@@ -1,5 +1,6 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
+import ResponsiveNavbar from './components/ResponsiveNavbar.vue';
 
 </script>
 

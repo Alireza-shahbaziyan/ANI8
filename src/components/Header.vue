@@ -1,5 +1,4 @@
 <template>
-    <ResponsiveNavbar />
     <header class=" w-full h-96 overflow-hidden bg-gradient-to-r from-indigo-600 to-fuchsia-700 text-center">
         <div
             class="text-white md:text-xl
