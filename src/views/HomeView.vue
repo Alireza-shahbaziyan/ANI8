@@ -4,8 +4,8 @@ import Body from '../components/Body.vue';
 export default {
   components: {
     Header,
-    Body
-  }
+    Body,
+}
 }
 </script>
 

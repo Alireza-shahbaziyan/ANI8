@@ -7,8 +7,9 @@
           py-2
           md:py-0
           px-2
+          md:h-16
           text-lg 
-          bg-slate-800
+          bg-gradient-to-r from-indigo-800 to-fuchsia-900
         ">
     <div class=" text-white uppercase text-3xl btn btn-ghost myfont">
       ani8
@@ -36,7 +37,7 @@
           <div class="btn btn-ghost "><a class="md:p-4 py-2 block hover:text-purple-400 " href="#">Sign Up</a></div>
         </li>
         <li>
-          <a class="md:p-4 py-2 block hover:text-purple-400" href="#">
+          <a class="p-2 block hover:text-purple-400" href="#">
             <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
               class="bi bi-github inline" viewBox="0 0 16 16">
               <path
