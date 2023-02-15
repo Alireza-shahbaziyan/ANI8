@@ -1,22 +1,23 @@
 <template>
-    <div class="h-96 flex flex-col items-center">
+    <div class="flex flex-col items-center bg-blue-100">
         <HeaderBox/>
-        <SearchBox />
-        <div class="text-3xl">{{ data }}</div>
+        <SearchBox/>
+        <BodyRow/>
+        <BodyRow/>
+        <BodyRow/>
+        <BodyRow/>
     </div>
 </template>
 <script>
-import {mapState} from 'vuex'
+import BodyRow from './BodyItems/BodyRow.vue';
 import HeaderBox from './BodyItems/HeaderBox.vue';
 import SearchBox from './BodyItems/SearchBox.vue'
 export default {
-    name:"Body",
-    components:{
-        HeaderBox
-        ,SearchBox
+    name: "Body",
+    components: {
+        HeaderBox,
+        SearchBox,
+        BodyRow
     },
-    computed:mapState({
-        data:store => store.data
-    })
 }
 </script>
