@@ -1,29 +1,20 @@
 <template>
-    <div class="w-full lg:h-60 pt-10 bg-blue-100">
+    <div class="w-full lg:h-72 pt-10 bg-blue-100">
         <div class="w-full flex justify-between px-4">
-            <div class="uppercase font-bold">{{ RowName }}</div>
-            <div class="">View All</div>
+            <div class="uppercase font-extrabold">Tranning</div>
+            <div class="btn btn-ghost">View All</div>
         </div>
-        <div class="flex justify-around flex-wrap">
-            <div v-for="item in data" :key="item.id" class="p-1 m-1 flex justify-center items-center flex-col">
-                <img :src="item.image" alt="IMAGE" class="h-28 lg:h-36 w-4/5 lg:w-full">
-                {{item.title }}
+        <div class="flex justify-around flex-wrap py-4">
+            <div v-for="item in useStoreData.data" :key="item.id" class="p-1 m-1 flex justify-center items-center flex-col">
+                <img :src="item.image" alt="IMAGE" class="h-28 lg:h-44 w-4/5 lg:w-full">
+                <div class="capitalize font-semibold textarea-xs text-slate-500 mt-2">{{item.animeName }}</div>
             </div>
         </div>
     </div>
 </template>
-<script>
-import { mapState } from 'vuex'
+<script setup>
+import { useStore } from '@/store';
 
-export default {
-    name: 'BodyRow',
-    data() {
-        return {
-            RowName:'Trending Now'
-        }
-    },
-    computed: mapState({
-        data: store => store.data
-    })
-}
+const useStoreData = useStore()
+
 </script>

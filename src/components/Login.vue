@@ -6,15 +6,16 @@
             <input type="password" class="input w-full my-2 bg-white" placeholder="Password">
             <input type="password" class="input w-full my-2 bg-white" placeholder="confirm Password">
             <!-- <input type="submit" value="Login" class="btn btn-wide w-full my-2"> -->
-                <div class="flex flex-col justify-center items-center">
-                    <label class="label cursor-pointer">
-                        <input type="checkbox"  class="checkbox" />
-                        <span class="label-text m-1 font-semibold">You agree to our terms of service</span>
+            <div class="flex flex-col justify-center items-center">
+                <label class="label cursor-pointer">
+                    <input type="checkbox" class="checkbox" />
+                    <span class="label-text m-1 font-semibold">You agree to our terms of service</span>
                 </label>
-                </div>
-                <input type="submit" value="Sing Up" class="btn btn-info text-white">
+            </div>
+            <input type="submit" value="Sing Up" class="btn btn-info text-white">
+            <p class="text-sky-900 text-xs cursor-pointer m-2">Click here if you have an account</p>
         </form>
-        
+
 
     </div>
 </template>
