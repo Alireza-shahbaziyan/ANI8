@@ -29,7 +29,6 @@ export default {
 </script>
 <style scoped>
 header {
-    /* border-radius: 0 0 85% 85% / 30%; */
-    /* background-image: url('../assets/images/image11.jpg'); */
+    /* border-radius: 0 0 95% 95% / 30%; */
 }
 </style>

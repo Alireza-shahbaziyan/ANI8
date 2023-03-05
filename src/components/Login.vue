@@ -15,7 +15,5 @@
             <input type="submit" value="Sing Up" class="btn btn-info text-white">
             <p class="text-sky-900 text-xs cursor-pointer m-2">Click here if you have an account</p>
         </form>
-
-
     </div>
 </template>

@@ -5,7 +5,6 @@
         <BodyRow/>
         <BodyRow/>
         <BodyRow/>
-        <BodyRow/>
     </div>
 </template>
 <script>
