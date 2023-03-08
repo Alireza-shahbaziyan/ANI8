@@ -6,18 +6,21 @@
             <div class="btn btn-ghost">View All</div>
         </div>
         <div></div>
-        <div v-for="i in useStoreData.data" :key="i.id" class="m-1 text-center w-20 md:w-36 lg:w-48 hover-grow">
+
+        <router-link  v-for="i in useStoreData.data" :key="i.id" :to="{name:'EventDetails',params:{id:i.id}}"
+            class="m-1 text-center w-20 md:w-36 lg:w-48 hover-grow cursor-pointer">
             <div>
                 <img :src="i.image" alt="IMAGE" class="w-full rounded-md">
             </div>
             <div class="text-black text-xs md:text-lg">
-                {{i.animeName}}
+                {{ i.animeName }}
             </div>
-        </div>
+        </router-link>
     </div>
 </template>
 
 <script setup>
 import { useStore } from '@/store';
+import { RouterLink } from 'vue-router';
 const useStoreData = useStore()
 </script>
