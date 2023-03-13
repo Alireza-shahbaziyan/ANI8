@@ -1,6 +1,6 @@
 <template>
     <div class="text-3xl text-black font-bold w-full text-center mt-80">
-        {{data[id]}}
+        {{id}}
     </div>
 </template>
 <script >

@@ -27,8 +27,3 @@ export default {
     components: { ResponsiveNavbar }
 }
 </script>
-<style scoped>
-header {
-    /* border-radius: 0 0 95% 95% / 30%; */
-}
-</style>

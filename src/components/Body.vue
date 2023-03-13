@@ -2,9 +2,9 @@
     <div class="flex flex-col items-center bg-blue-100">
         <HeaderBox/>
         <SearchBox/>
-        <BodyRow/>
-        <BodyRow/>
-        <BodyRow/>
+        <BodyRow Title="Traning"/>
+        <BodyRow Title="News"/>
+        <BodyRow Title="Popular"/>
     </div>
 </template>
 <script>
