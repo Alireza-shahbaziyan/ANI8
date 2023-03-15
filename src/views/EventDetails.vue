@@ -1,6 +1,6 @@
 <template>
     <div class="text-3xl text-black font-bold w-full text-center mt-80">
-        {{id}}
+        {{ id }}
     </div>
 </template>
 <script >
@@ -10,13 +10,8 @@ import { mapState } from 'pinia'
 export default {
     name: 'EventDetails',
     props: ['id'],
-    data() {
-        return {
-            ID: this.id
-        }
-    },
    computed: {
-    ...mapState(useStore, ['data'])
+    ...mapState(useStore,['data']),
    }
 }
 </script>
